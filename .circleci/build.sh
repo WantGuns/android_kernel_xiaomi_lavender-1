@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 echo "Cloning dependencies"
-git clone --depth=1 https://github.com/Yasir-siddiqui/android_kernel_xiaomi_lavender -b master kernel
+git clone --depth=1 https://github.com/Yasir-siddiqui/android_kernel_xiaomi_lavender -b notkernel kernel
 cd kernel
-git clone --depth=1 https://github.com/kdrag0n/proton-clang clang
+git clone --depth=1 https://github.com/Yasir-siddiqui/proton-clang clang
 git clone --depth=1 https://github.com/Yasir-siddiqui/AnyKernel3 AnyKernel
 echo "Done"
 IMAGE=$(pwd)/out/arch/arm64/boot/Image.gz-dtb
